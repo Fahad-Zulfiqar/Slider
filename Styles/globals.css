@@ -1,0 +1,82 @@
+body {
+  font-family: sans-serif;
+  font-size: 32px;
+  line-height: 1.25;
+
+  background-color: #000;
+  color: #fff;
+}
+
+a {
+  position: absolute;
+  bottom: 0;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: #fff;
+
+  z-index: 1;
+}
+
+.slider {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+.holder {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 400vw;
+  height: 100vh;
+
+  transition: left 1s;
+}
+
+.holder div {
+  padding: 20px 30px;
+
+  float: left;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider_1 {
+  background-image: url("../Images/moon-1.jpg");
+}
+
+.slider_2 {
+  background-image: url("../Images/moon-2.jpg");
+}
+
+.slider_3 {
+  background-image: url("../Images/moon-3.jpg");
+}
+
+.slider_4 {
+  background-image: url("../Images/moon-4.jpg");
+}
+
+.steps {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
